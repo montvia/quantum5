@@ -40,6 +40,7 @@ func _process(_delta):
 		enemys = {}
 		enemy_died = true
 		random_generation()
+		random()
 		#spawn_key = true
 		reset_game = false
 		#get_tree().reload_current_scene()

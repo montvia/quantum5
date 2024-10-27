@@ -94,6 +94,7 @@ func _ready():
 	raycast_sensor.activate()
 	$AnimatedSprite2D.play("idle_down")
 	last_move = "down"
+	$AudioStreamPlayer2D.play()
 	#position = initial_player_position
 	#game_over_func()
 #
@@ -190,7 +191,7 @@ func _physics_process(delta):
 			
 	if Global.reset_game:
 		player_health = 3
-		position = Vector2(616, 488)
+		position = Vector2(304, 264)
 	#normalitzar els vectors
 	if movement.length() > 0:
 		movement = movement.normalized() * speed

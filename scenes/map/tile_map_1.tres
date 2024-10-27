@@ -1,6 +1,7 @@
-[gd_resource type="TileSet" load_steps=6 format=3 uid="uid://r1llegil5v11"]
+[gd_resource type="TileSet" load_steps=8 format=3 uid="uid://r1llegil5v11"]
 
 [ext_resource type="Texture2D" uid="uid://brpc66urycn3x" path="res://assets/sprites quantum/tileset.png" id="1_ffnta"]
+[ext_resource type="Texture2D" uid="uid://bb0gvvo7a5llf" path="res://assets/sprites quantum/down_top).png" id="2_g4ww5"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_mwund"]
 vertices = PackedVector2Array(16, 16, -16, 16, -16, -16, 16, -16)
@@ -220,8 +221,16 @@ texture_region_size = Vector2i(32, 32)
 5:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 5:7/0/physics_layer_0/angular_velocity = 0.0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gmeuy"]
+texture = ExtResource("2_g4ww5")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
 [resource]
 tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
 navigation_layer_0/layers = 1
 sources/0 = SubResource("TileSetAtlasSource_5kg5d")
+sources/1 = SubResource("TileSetAtlasSource_gmeuy")

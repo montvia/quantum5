@@ -31,7 +31,7 @@ func _ready() -> void:
 
 func _physics_process(_delta: float) -> void:
 	if Global.enemy_died:
-		position = Vector2(539, 224)
+		position = Vector2(216, -8)
 		Global.enemy_died = false
 
 	if enemy_health > 0 and not Global.reset_game:
